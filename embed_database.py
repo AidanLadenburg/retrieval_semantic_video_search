@@ -52,12 +52,14 @@ def embed_annotations(base, device=torch.device('cuda')):
                 
 
 if __name__ == '__main__':
-
-    #database = "E:/adhoc_search/nvidia_data"
+    ### uncomment below to encode videos
+    #database = "path/to/data"
     #cfg = model_cfgs['viclip-l-internvid-div-10m']
     #model = get_viclip(cfg['size'], cfg['pretrained'])
     #embed_database(database, model)
-    embed_annotations(os.path.dirname(__file__).replace('\\', '/'))
+    
+    ### uncomment below to encode annotations
+    #embed_annotations(os.path.dirname(__file__).replace('\\', '/'))
 
     
 
