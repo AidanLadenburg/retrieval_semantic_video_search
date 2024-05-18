@@ -27,7 +27,7 @@ def get_img_feat(img, base, device=torch.device('cuda')):
     return img_feat
 
 def retrieve_vids(query, model, base, data, device=torch.device('cuda')):
-    paths = {"database": "9063_1715580612.npy", "nvidia_data": "20240517-172725_nvidia_data_887.npy"} #CHANGE PATHS IF NEEDED
+    paths = {"data_folder": "path_to_embeddings.npy"} #CHANGE PATHS
     annotations = {} #ADD ANNOTATIONS IF NEEDED {key: "folder"}
 
     clip, tokenizer = model['viclip'], model['tokenizer']
@@ -97,7 +97,7 @@ def main(base, data):
         rows+=2
 
 if __name__ == '__main__': 
-    main(os.path.dirname(__file__).replace('\\', '/'), data="nvidia_data")
+    main(os.path.dirname(__file__).replace('\\', '/'), data="database")
 
     
 
