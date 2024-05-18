@@ -11,7 +11,7 @@ from run import get_img_feat
 model_cfgs = {
     'viclip-l-internvid-div-10m': {
         'size': 'l',
-        'pretrained': 'models/ViCLIP-L_InternVid-DIV-10M.pth',
+        'pretrained': 'models/ViCLIP-L_InternVid-DIV-10M.pth', #CHANGE PATH TO MODEL IF NEEDED
     },
 }
 
